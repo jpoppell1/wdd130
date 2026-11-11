@@ -1,22 +1,30 @@
+:root {
+    --brand-color: darkblue;
+    --text-color: #333;
+    --border-color: black;
+    --image-width: 150px;
+    --spacing: 1rem;
+    --border-style: 1px solid;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: var(--brand-color);
     padding: 10px;
 }
 
 nav a {
     color: white;
-    display: block;
     padding: 20px;
 }
 
 h1 {
-    color: darkblue;
+    color: var(--brand-color);
 }
 
 img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid black;
+    border: var(--border-style) var(--border-color);
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -30,21 +38,21 @@ main {
 }
 
 main img {
-    width: 150px;
+    width: var(--image-width);
     height: auto;
-    border: 1px solid #333;
+    border: var(--border-style) var(--text-color);
     padding: 4px;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+    margin: var(--spacing);
+    border: var(--border-style) rgb(0 0 0 / 0.2);
     /* 1 */
-    padding: 1rem;
+    padding: var(--spacing);
     background-color: #eee;
-    color: #333;
+    color: var(--text-color);
     text-align: center;
 }
 
@@ -55,6 +63,6 @@ aside img {
 
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border-style) var(--border-color);
     text-align: center;
 }
