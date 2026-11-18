@@ -1,8 +1,6 @@
 :root {
     --primary-color: #1d4e89;
     /* river blue */
-    --secondary-color: #055a05;
-    /* Forest green */
     --accent-color: black;
     /* Helmet yellow */
     --heading-font: "Times New Roman", Georgia, serif;
@@ -95,7 +93,6 @@ header {
 
 header img {
     max-width: 100%;
-    max-width: 100px;
 }
 
 nav ul {
