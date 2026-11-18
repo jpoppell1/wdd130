@@ -14,6 +14,10 @@ div {
     margin: 1rem;
     border: 1px dashed;
     padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 }
 
 .one {
@@ -23,18 +27,26 @@ div {
 
 .flex {
     background-color: #aba;
-    /* write declarations here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .grid {
     background-color: #abb;
-    /* write declarations here */
+    display: grid;
+    place-items: center;
+    width: 200px;
+    height: 200px;
+    display: grid;
 
 }
 
 .container2 {
-    /* write declarations here */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
@@ -44,12 +56,14 @@ div {
 }
 
 .container3 {
-    /* write declarations here */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
 .columns-3 {
-    /* write declaration here */
+    grid-column: 1 / 4;
+    ;
 
 }
 

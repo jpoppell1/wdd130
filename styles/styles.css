@@ -13,18 +13,32 @@
     --border-style: 1px solid;
 }
 
+header,
+.grid,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 nav {
     background-color: var(--brand-color);
     padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav a {
     color: white;
+    display: block;
     padding: 20px;
+    text-decoration: none;
+    font-family: 'lato', sans-serif;
 }
 
 h1 {
     color: var(--brand-color);
+    border-bottom: 2px solid darkblue;
 }
 
 img {
@@ -41,6 +55,7 @@ p {
 
 main {
     max-width: 840px;
+    grid-column: 2/3;
 }
 
 main img {
@@ -54,8 +69,11 @@ main img {
 
 aside {
     width: 20rem;
+    border: 2px solid darkblue;
     text-align: center;
     position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 aside img {
@@ -76,4 +94,9 @@ footer {
     padding: 1rem;
     background-color: #d9d9d9;
     color: black
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
